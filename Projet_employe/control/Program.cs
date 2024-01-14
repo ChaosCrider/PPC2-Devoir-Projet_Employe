@@ -17,12 +17,14 @@ namespace Projet_employe
             RegistreEmploye listing = new RegistreEmploye();
 
             //créer un employe
-            Employe emp1 = Utilitaire.CreerEmploye();
-            Employe emp2 = Utilitaire.CreerEmploye();
+            Employe emp1 = Utilitaire.CreerEmploye("FlouFlou", "Alain", 25);
+            Employe emp2 = Utilitaire.CreerEmploye("FlouClair", "Abdel", 34);
+            Employe emp3 = Utilitaire.CreerEmploye("FlouFlou", "Annie", 22);
 
             //ajoputer les employes dans le listing
             listing.AjouterEmploye(emp1);
             listing.AjouterEmploye(emp2);
+            listing.AjouterEmploye(emp3);
 
             //Afficher le contenue de listing
             listing.ListerEmploye();
