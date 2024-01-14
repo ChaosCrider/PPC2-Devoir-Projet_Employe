@@ -9,9 +9,9 @@ namespace Projet_employe.utils
 {
     internal class Utilitaire
     {
-        internal static Employe CreerEmploye()
+        internal static Employe CreerEmploye(string nom, string prenom, int age)
         {
-            throw new NotImplementedException();
+            return new Employe(nom,prenom,age);
         }
     }
 }

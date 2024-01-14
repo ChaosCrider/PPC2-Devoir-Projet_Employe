@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,6 +27,13 @@ namespace Projet_employe.modele
         {
             set { _age = value; }
             get { return _age; } 
+        }
+
+        public Employe(string nom, string prenom, int age)
+        {
+            this._nom = nom;
+            this._prenom = prenom;
+            this._age = age;
         }
     }
 }
